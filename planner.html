@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Ismail Yahaya Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <h1 class="logo">Ismail Yahaya</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html" class="active">Academic Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h2>My Academic Planner</h2>
+    <p>Use this planner to add your study tasks and keep track of them. This uses JavaScript.</p>
+  </section>
+  <section>
+    <h3>Add New Task</h3>
+    <form id="planner-form">
+      <label for="task-input">Task:</label><br>
+      <input type="text" id="task-input" placeholder="e.g. Read COS 106 Chapter 3" required style="width:100%; padding:10px; margin:8px 0;"><br>
+      <label for="date-input">Deadline:</label><br>
+      <input type="date" id="date-input" required style="width:100%; padding:10px; margin:8px 0;"><br>
+      <button type="submit" class="btn">Add Task</button>
+    </form>
+  </section>
+  <section>
+    <h3>My Tasks</h3>
+    <ul id="task-list">
+      <li>Read COS 106 notes - Due: 2026-11-15 <button onclick="this.parentElement.remove()">Done</button></li>
+      <li>Practice HTML & CSS - Due: 2026-11-18 <button onclick="this.parentElement.remove()">Done</button></li>
+    </ul>
+    <p id="task-count">Total tasks: 2</p>
+  </section>
+</main>
+<footer><p>&copy; 2026 Ismail Yahaya | COS 106 Project</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
