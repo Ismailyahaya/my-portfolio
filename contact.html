@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Ismail Yahaya Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <h1 class="logo">Ismail Yahaya</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Academic Planner</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h2>Contact Me</h2>
+    <p>I would love to hear from you! Fill the form below or contact me directly.</p>
+    <p><strong>Email:</strong> ismailyahaya4real@gmail.com</p>
+    <p><strong>University:</strong> MIVA Open University - Computer Science</p>
+    <p><strong>Location:</strong> Lagos, Nigeria</p>
+  </section>
+  <section>
+    <h3>Send a Message</h3>
+    <form id="contact-form">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required style="width:100%; padding:10px; margin:8px 0;"><br>
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required style="width:100%; padding:10px; margin:8px 0;"><br>
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required style="width:100%; padding:10px; margin:8px 0;"></textarea><br>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p id="form-message" style="color:green; font-weight:bold;"></p>
+  </section>
+</main>
+<footer><p>&copy; 2026 Ismail Yahaya | COS 106 Project</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
